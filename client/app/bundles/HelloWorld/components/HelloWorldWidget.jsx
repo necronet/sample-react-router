@@ -4,6 +4,7 @@
 import React, { PropTypes } from 'react';
 import _ from 'lodash';
 import { Input } from 'react-bootstrap';
+import { Link } from 'react-router'
 
 // Simple example of a React "dumb" component
 export default class HelloWorldWidget extends React.Component {
@@ -47,6 +48,7 @@ export default class HelloWorldWidget extends React.Component {
               onChange={this.handleChange}
             />
         </form>
+        <Link to="/other">Other link</Link>
       </div>
     );
   }
